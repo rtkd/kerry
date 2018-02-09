@@ -1,7 +1,7 @@
 var letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 var lettersLength = letters.length;
 
-var rot = [3, 0, 6, 6, 10];
+var rot = [3, 0, 6, 6, 10]; // assuming kerry === hello
 
 var cmd = process.argv.slice(2);
 
