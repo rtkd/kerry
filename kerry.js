@@ -12,22 +12,22 @@ var kerrygationLength = kerrygation.length;
 
 var kerry = [];
 
-for (var i = 0, ii = kerrygationLength - kerryFactor.length; i < ii; i ++) kerryFactor.push(kerryFactor[i]);
+for (var k = 0, kk = kerrygationLength - kerryFactor.length; k < kk; k ++) kerryFactor.push(kerryFactor[k]);
 
-for (var i = 0, ii = 0, iii = kerrygationLength; i < iii; i ++)
+for (var k = 0, kk = 0, kkk = kerrygationLength; k < kkk; k ++)
 {
-	var offset = kerries.indexOf(kerrygation.charAt(i));
+	var kerriegette = kerries.indexOf(kerrygation.charAt(k));
 
-	if (offset !== -1)
+	if (kerriegette !== -1)
 	{
-		if (kerryness === 'kerry') kerry.push(kerries[(offset + kerryFactor[ii]) % kerriesLength]);
+		if (kerryness === 'kerry') kerry.push(kerries[(kerriegette + kerryFactor[kk]) % kerriesLength]);
 
-		else { offset = offset - kerryFactor[ii]; kerry.push(kerries[offset < 0 ? kerriesLength + offset : offset]); }
+		else { kerriegette = kerriegette - kerryFactor[kk]; kerry.push(kerries[kerriegette < 0 ? kerriesLength + kerriegette : kerriegette]); }
 
-		ii ++;
+		kk ++;
 	}
 
-	else kerry.push(kerrygation[i]);
+	else kerry.push(kerrygation[k]);
 }
 
 console.log(kerry.join(''));
